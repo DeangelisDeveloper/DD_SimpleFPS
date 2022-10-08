@@ -52,10 +52,10 @@ public class Enemy : MonoBehaviour
         health -= amountDamage;
 
         if (health <= 0f)
-            Die();
+            Death();
     }
 
-    void Die()
+    void Death()
     {
         Manager.instance.SetScore(score);
         Destroy(gameObject);
