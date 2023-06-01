@@ -57,11 +57,8 @@ public class Weapon : MonoBehaviour
         {
             if ((isAuto && Input.GetKey(KeyCode.Mouse0)) || (!isAuto && Input.GetKeyDown(KeyCode.Mouse0)))
             {
-                if (Input.GetKey(KeyCode.Mouse0))
-                {
-                    nextShot = Time.time + 1f / fireRate;
-                    Shoot();
-                }
+                nextShot = Time.time + 1f / fireRate;
+                Shoot();
             }
         }
     }
